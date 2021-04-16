@@ -67,6 +67,7 @@ void main()
     {
         enter:
         display();
+      // Basic Choices Display
         printf("Enter your choice here : ");
         scanf("%c", &choice);
         getchar();
@@ -138,6 +139,7 @@ void display_gromenu()
     printf("\t\t   [5] Horse Gram - Rs 60.00\n");
     printf("\t\t   [6] Green Gram - Rs 55.00\n");
 }
+// Grocery Computation
 void gro(char gromenu[][100]) //Goceries Menu Screen
 {
     int choice = 0; //local variables
@@ -166,6 +168,7 @@ void gro(char gromenu[][100]) //Goceries Menu Screen
     }
     repeatgro(gromenu);
 }
+// Repeating Groceries Menu
 void repeatgro(char gromenu[][100])
 {
     printf("\nWould you like to buy anything else?\n[1] Yes , [2] No : "); // Allows user to choose whether to check-out or buy anything else.
@@ -183,6 +186,7 @@ void repeatgro(char gromenu[][100])
         repeatgro(gromenu);
     }
 }
+// Groceries Billing
 void display_gro_bill(char gromenu[][100])
 {
     int i;
@@ -210,7 +214,7 @@ void display_gro_bill(char gromenu[][100])
 
 }
 
-
+// Fruits and Vegetables Billing
 void display_fv_bill(char fvmenu[][100])
 {
     int i;
@@ -236,6 +240,8 @@ void display_fv_bill(char fvmenu[][100])
     display_total_words();
     printf("\n+============================================================+");
 }
+
+// Dairy Items Billing
 void display_di_bill(char dimenu[][100])
 {
     int i;
@@ -262,7 +268,9 @@ void display_di_bill(char dimenu[][100])
     display_total_words();
     printf("\n+============================================================+");
 }
-void fv(char fvmenu[][100]) // Lunch Screen Menu
+
+// Fruits and Vegetables Menu
+void fv(char fvmenu[][100]) 
 {
     int choice = 0; //local variables
     int quantity = 0;
@@ -291,7 +299,9 @@ void fv(char fvmenu[][100]) // Lunch Screen Menu
     }
     repeatfv(fvmenu);
 }
-void di(char dimenu[][100]) // Dinner Menu Screen
+
+// Dairy Items Computation
+void di(char dimenu[][100])
 {
     int choice = 0; //local variables
     int quantity = 0;
@@ -321,6 +331,8 @@ void di(char dimenu[][100]) // Dinner Menu Screen
     }
     repeatdi(dimenu);
 }
+
+//Fruits and Vegetables Menu
 void fv_menucard()
 {
     printf("              Welcome to REAL FRESH SUPERMART          \n ");
@@ -335,6 +347,8 @@ void fv_menucard()
     printf("\t\t   [5] Water Melon - Rs 20.00\n");
     printf("\t\t   [6] Kiwi - Rs 100.00\n");
 }
+
+// Dairy Items Menu
 void di_menu()
 {
     printf("                Welcome to REAL FRESH SUPERMART          \n ");
@@ -349,6 +363,8 @@ void di_menu()
     printf("\t\t   [5] Paneer - Rs 600.00\n");
     printf("\t\t   [6] Khova - Rs 750.00\n");
 }
+
+// Fruits and Vegetables Repeat
 void repeatfv(char fvmenu[][100])
 {
     printf("\nWould you like to buy anything else?\n[1] Yes , [2] No : "); // Allows user to choose whether to check-out or buy anything else.
@@ -366,6 +382,8 @@ void repeatfv(char fvmenu[][100])
         repeatfv(fvmenu);
     }
 }
+
+// Dairy Items Repeat
 void repeatdi(char dimenu[][100])
 {
 
@@ -386,6 +404,8 @@ void repeatdi(char dimenu[][100])
         repeatdi(dimenu);
     }
 }
+
+// Total Computation and Display
 void display_total_words()
 {
     int num=0,temp=0;
